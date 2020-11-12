@@ -784,6 +784,8 @@ $$
 
 \newpage
 
+\section{Wykład 4}
+
 \subsection{Kinematyka i algorytm Denavita-Hartenberga}
 
 Liczenie kinematyki manipulatora.
@@ -798,4 +800,39 @@ Taką kinematykę wylicza się względem algorytmu {\bf Danovita-Hartenberga}.
 Za pomocą $4$ parametrów chcemy opisać ruch jednego układu współrzednych względem drugiego układu współrzednych.
 
 % 1:15:00
+
+\newpage
+
+Manipulator sztywny definiujemy jako układ złożony z pewnej liczby
+ciał sztywnych (ramion, ogniw) połączonych przegubami. Przyjmujemy,
+że przeguby są typu obrotowego lub typu przesuwnego; bardziej złożone
+przeguby można traktować jako kombinację tych dwóch typów. Ramiona manipulatora tworzą tzw. łańcuch kinematyczny. Początkiem łańcucha jest nieruchoma podstawa, a końcem – efektor manipulatora. Będziemy zakładać, że łańcuch kinematyczny jest otwarty, tzn. efektor nie
+pokrywa się z podstawą manipulatora. Taki manipulator nazywamy szeregowym. Liczbę przegubów manipulatora nazywamy jego liczbą stopni
+swobody. Jeśli jeden przegub może wykonywać dwa niezależne ruchy to każdy z nich jest niezależną liczbą stopni swobody. Schematyczny widok manipulatora szeregowego przedstawia rysunek poniżej. Na Rysunku symbole $L_{1}, L_{2}, \dots , L_{n}$ oznaczają kolejne ogniwa manipulatora.
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.5]{img/manipulator_sz.jpg}
+\end{figure}
+
+Z reguły opisując manipulator nadajemy im nazwy związane z ilościa stopni swobody.
+Np podwójne wachadło (RR) oznacza, że są 2 obrotowe stopnie swobody, manipulator RTR to obrotowy, przesuwny i obrotowy itp. itd..
+
+Przez przestrzeń przegubową manipulatora rozumiemy wektor. Każda składowa tego wektora to jest położenie pojedyńczego przegubu. Czyli np manipulator o 3 stopniach swobody bedzie miał przestrzeń przegubową $q_{1}, q_{2}, q_{3}$.
+
+Jeśli chcemy opisać kinematykę, czyli położenie i orientację punktu pracy/efektora względem podstawy. Wybieramy dwa specjalne układy współrzedne.
+Pierwszy układ współrzednych związany jest z podstawą, jest to układ "bazowy", "podstawowy", jest nieruchomy (układ przestrzeni)(Space).
+Drugi układ związany jest z efektorem, jest to układ ciała (Body).
+Chcemy za ich pomocą wyrazić kinematykę manipulatora czyli powiedzieć gdzie znajduje się efektor względem układu podstawowego i jak jest względem niego skierowany.
+
+\newpage
+
+\subsection{Algorytm Denavita-Hartenberga}
+
+% 3:40 wyk4
+
+
+
+
 \end{document}
