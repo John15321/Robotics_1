@@ -57,7 +57,7 @@ def trans_z_fun(b):
 
 # Jednorodne:
 
-def jednorodne_rot_x(alpha):
+def rot_x(alpha):
     return sp.Matrix([
         [1,             0,              0, 0],
         [0, sp.cos(alpha), -sp.sin(alpha), 0],
@@ -65,7 +65,7 @@ def jednorodne_rot_x(alpha):
         [0,             0,              0, 1]
     ])
 
-def jednorodne_rot_y(beta):
+def rot_y(beta):
     return sp.Matrix([
         [ sp.cos(beta), 0, sp.sin(beta), 0],
         [0,             1,            0, 0],
@@ -73,7 +73,7 @@ def jednorodne_rot_y(beta):
         [0,             0,            0, 1]
     ])
 
-def jednorodne_rot_z(gamma):
+def rot_z(gamma):
     return sp.Matrix([
         [sp.cos(gamma), -sp.sin(gamma), 0, 0],
         [sp.sin(gamma),  sp.cos(gamma), 0, 0],
@@ -82,7 +82,7 @@ def jednorodne_rot_z(gamma):
     ])
 
 
-def jednorodne_trans_x(a):
+def trans_x(a):
     return sp.Matrix([
         [1, 0, 0, a],
         [0, 1, 0, 0],
@@ -91,7 +91,7 @@ def jednorodne_trans_x(a):
     ])
 
 
-def jednorodne_trans_y(b):
+def trans_y(b):
     return sp.Matrix([
         [1, 0, 0, 0],
         [0, 1, 0, b],
@@ -102,7 +102,7 @@ def jednorodne_trans_y(b):
 
 
 
-def jednorodne_trans_z(c):
+def trans_z(c):
     return sp.Matrix([
         [1, 0, 0, 0],
         [0, 1, 0, 0],
